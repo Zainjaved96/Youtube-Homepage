@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Youtube Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
@@ -16,6 +17,8 @@
 
 <body>
     <!-- navbar-start -->
+
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex">
         <!-- container-main-start -->
         <div class="container-fluid">
@@ -23,13 +26,13 @@
             <div class="hamburger">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <img src="ham.png">
+                        <a class="nav-link active" onclick="showMenu()" aria-current="page" href="#">
+                            <img src="./images/ham.png">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <img src="logo.png" width="25%" alt="Youtube-logo" class="youtube-logo"></a>
+                            <img src="./images/logo.png" width="25%" alt="Youtube-logo" class="youtube-logo"></a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +46,6 @@
                         <ion-icon class="nav-btn" name="search-outline"></ion-icon>
                     </button>
                     <button class="btn btn-outline-secondary nav-btn " type="button">
-
                         <ion-icon class="nav-btn" name="mic-outline"></ion-icon>
                     </button>
                 </div>
@@ -56,7 +58,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <button class="plus-btn " type="submit">
-                                <img src="plus.png " width="25px">
+                                <img src="./images/plus.png " width="25px">
                             </button>
                         </a>
                     </li>
@@ -70,7 +72,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <button class="sign-btn  " type="submit">
-                                <img src="signin.png" width="25px">
+                                <img src="./images/signin.png" width="25px">
                             </button>
                         </a>
                     </li>
@@ -80,18 +82,65 @@
         </div>
         <!-- container-main-close -->
     </nav>
-     <!-- <img src="yt image.webp" alt="" srcset> -->
+    <div class="nav-menu" id="nav-menu">
+        <div class="nav-menu-items">
+            <!-- Toggle button with Youtube Logo  -->
+            <div class="navbar-toggle">
+                <span href="#"  id="#show"  class="toggle-menu" onclick="hideMenu()">
+                    <i class="fas fa-bars menu-bars nav-icon"></i>
+                </span>
+                <a href="#" class="nav-head">
+                    <i class="fab fa-youtube youtube-logo"></i> 
+                    <span class="logo-text"> Youtube </span> 
+                </a>
+            <!-- Toggle button Ends -->
+            </div>
+
+            <!--  Creating lists for each menu section -->
+
+            <!-- First Section -->
+            <ul class="nav-section">
+                <!-- Icon and Text in one List so we can align them through flex -->
+                <li class="nav-text"><i class="fa fa-home nav-icon"></i>Home</li>
+                <li class="nav-text"><i class="fa fa-fire nav-icon"></i>Trending</li>
+                <li class="nav-text"><i class="fab fa-youtube nav-icon"></i>Subscription</li>
+                <hr>
+            </ul>
+
+            <!-- Seconds Section -->
+            <ul class="nav-section">
+                <li class="nav-text"><i class="fa fa-play-circle nav-icon"></i>Library</li>
+                <li class="nav-text"><i class="fa fa-history nav-icon"></i>History</li>
+                <li class="nav-text"><i class="fas fa-video nav-icon"></i>Your Videos</li>
+                <li class="nav-text"><i class="fas fa-clock nav-icon"></i>Watch Later</li>
+                <li class="nav-text"><i class="fas fa-thumbs-up nav-icon"></i>Liked Videos</li>
+                <li class="nav-text"><i class="fas fa-file-video nav-icon"></i>Playlist</li>
+                <hr>
+            </ul>
+
+            <!-- Third Section -->
+            <ul class="nav-section">
+                <li class="nav-text"><i class="fa fa-cog nav-icon"></i>Settings</li>
+                <li class="nav-text"><i class="fa fa-flag nav-icon"></i>Report</li>
+                <li class="nav-text"><i class="fas fa-phone nav-icon"></i>Send Feedback</li>
+ 
+                <hr>
+            </ul>
+ 
+        </div>
+    </div>
+     <!-- <img src="./images/yt image.webp" alt="" srcset> -->
     <!-- navbar-close -->
       <!-- container-fluid-start -->
         <div class="container-fluid">
             <!-- container-row-start -->
             <div class="row">
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-sm-12 col-md-6">
                 <div class="card" style="width: 18rem;">
-                    <img src="yt image.webp" class="card-img-top" alt="...">
+                    <img src="./images/yt image.webp" class="card-img-top" alt="...">
                     <div class="card-body yt-image">
                       <div class="logo-title">
-                         <img src="lg.jpg" class="channel-logo" alt="" srcset="">
+                         <img src="./images/lg.jpg" class="channel-logo" alt="" srcset="">
                          <span class="vid-title">
                           How  to learn graphic designing with Canva in only one course
                          </span> 
@@ -108,12 +157,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="img 2.webp" class="card-img-top" alt="...">
+                        <img src="./images/img 2.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
                           <div class="logo-title">
-                             <img src="logo 2.jpg" class="channel-logo" alt="" srcset="">
+                             <img src="./images/logo 2.jpg" class="channel-logo" alt="" srcset="">
                              <span class="vid-title">
                               I paid them 5$ to create my website on Fiverr
                              </span> 
@@ -130,12 +179,12 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="image 3.webp" class="card-img-top" alt="...">
+                        <img src="./images/image 3.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
                           <div class="logo-title">
-                             <img src="logo 3.jpg" class="channel-logo" alt="" srcset="">
+                             <img src="./images/logo 3.jpg" class="channel-logo" alt="" srcset="">
                              <span class="vid-title">
                               How to use Leetcode Effectively to crack your dream company
                              </span> 
@@ -152,12 +201,12 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="image 4.webp" class="card-img-top" alt="...">
+                        <img src="./images/image 4.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
                           <div class="logo-title">
-                             <img src="logo 4.jpg" class="channel-logo" alt="" srcset="">
+                             <img src="./images/logo 4.jpg" class="channel-logo" alt="" srcset="">
                              <span class="vid-title">
                               How  to Start Freelancing In 2023?
                               Hindi
@@ -177,12 +226,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-sm-12 col-md-6">
                 <div class="card" style="width: 18rem;">
-                    <img src="image 9.webp" class="card-img-top" alt="...">
+                    <img src="./images/image 9.webp" class="card-img-top" alt="...">
                     <div class="card-body yt-image">
                       <div class="logo-title">
-                         <img src="logo 6.jpg" class="channel-logo" alt="" srcset="">
+                         <img src="./images/logo 6.jpg" class="channel-logo" alt="" srcset="">
                          <span class="vid-title">
                          What is AWS? | Amazon Web Services
                          </span> 
@@ -199,12 +248,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="image 7.webp" class="card-img-top" alt="...">
+                        <img src="./images/image 7.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
                           <div class="logo-title">
-                             <img src="logo 7.jpg" class="channel-logo" alt="" srcset="">
+                             <img src="./images/logo 7.jpg" class="channel-logo" alt="" srcset="">
                              <span class="vid-title">
                               Software Engineer Promotions| What are the levels of Software 
                              </span> 
@@ -221,12 +270,12 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="image 8.webp" class="card-img-top" alt="...">
+                        <img src="./images/image 8.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
                           <div class="logo-title">
-                             <img src="logo 8.jpg" class="channel-logo" alt="" srcset="">
+                             <img src="./images/logo 8.jpg" class="channel-logo" alt="" srcset="">
                              <span class="vid-title">
                               What Channel To Create on Youtube By Rehan Allahwala
                              </span> 
@@ -243,12 +292,12 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
+                <div class="col-lg-3 col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="image 5.webp" class="card-img-top" alt="...">
+                        <img src="./images/image 5.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
                           <div class="logo-title">
-                             <img src="logo 5.jpg" class="channel-logo" alt="" srcset="">
+                             <img src="./images/logo 5.jpg" class="channel-logo" alt="" srcset="">
                              <span class="vid-title">
                               I understand English very well, but i am unable to speak English
                              </span> 
@@ -270,11 +319,14 @@
         </div>
         <!-- container-fluid-close -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+
+
+        <script src="./js/index.js"></script>
+    <script src="./images/https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./images/https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="./images/https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <!-- body close -->
 

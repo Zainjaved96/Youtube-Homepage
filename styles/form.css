@@ -1,20 +1,30 @@
-* {
-    font-family: 'Noto Sans', sans-serif;;
-}
 
+ @font-face {
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Regular'), url('ProductSans-Regular.woff') format('woff');
+    }
+
+
+* {
+    font-family:sans-serif;
+}
 .container {
-    padding-top: 20px;
+   margin-top: 10px;
 }
 
 .card {
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 48px 40px 36px;
+    padding-bottom: 100px;
 }
 
 .info-head {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.33;
+    margin-bottom: 0px;
     padding-top: 16px;
 }
 
@@ -43,7 +53,7 @@
     margin: 1px 1px 0 1px;
     padding: 13px 15px;
     z-index: 1;
-    border: 0.1px rgb(129, 111, 111) solid;
+    border: 0.1px hsl(220, 9%, 87%) solid;
    
 }
 
@@ -52,10 +62,12 @@
     padding-top: 5px;
     font-size: 14px;
     color: #5f6368;
-
-
+   
 }
 
+.signin-info-link {
+    text-decoration: none;
+}
 .create-button {
     text-decoration: none;
     color: #1a73e8;
@@ -72,8 +84,24 @@
 .next-button {
     text-decoration: none;
     background-color: #1a73e8;
-    padding: 8px 14px;
+    padding: 6px 14px;
     border-radius: 5px;
     font-size: 14px;
     color: aliceblue;
+}
+
+.wrong {
+    border-color: red;
+}
+
+.warning {
+    font-size: 14px;
+    color: red;
+    font-weight: 400;
+    font-family: 'roboto';
+    display: none;
+}
+
+.warning-enabled {
+   display: block;
 }

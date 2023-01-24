@@ -42,7 +42,7 @@ nav {
     font-family: "roboto sans-sarif";
     background-color: white;
     left: -100%;
-
+    z-index: 1;
 }
 
 .active {
