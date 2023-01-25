@@ -42,6 +42,6 @@ function passSubmit(){
         warning.classList.add("warning-enabled")
     }
     else {
-        window.location.href = "/index.html"
+        window.location.href = "/homepage.html"
     }
 }
