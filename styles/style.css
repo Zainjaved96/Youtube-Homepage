@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    overflow-x: hidden;
+}
  .mg{
     /* width: 40px; */
     /* border: none; */
@@ -98,19 +102,30 @@
 
 
 @media (max-width:720px) {
+    .main {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
     .video  {
         display: flex;
         justify-content: center;
-        margin: 10px 3px;
+        margin: 15px 3px;
     }
     .first-video {
         margin-top: 60px !important;
     }
     .icons {
+        width: ;
         display: flex;
         justify-content: center !important;
     }
-    
+    .buttons {
+        margin-top: 70px !important;
+    }
+    .btn {
+        margin-bottom: 10px;
+        display: none;
+    }
 }
 
 
@@ -171,6 +186,27 @@ gap: 20px;
     width: 40px;
 }
 
-.main {
-    margin-left: 220px !important;
+
+.dim {
+    opacity: 0.3 !important;
+}
+
+.buttons{
+    margin: 15px 10px;
+
+}
+.btn:hover{
+     background-color:rgb(230, 230, 230) !important;  
+     /* color:  !important;  */
+}
+button{
+   margin-left: 10px !important;
+   color:rgb(15, 15, 15) !important ;
+   background-color: rgb(242, 242, 242) !important;
+   border: none !important;
+   border-radius: 8px !important;
+}
+.first-button{
+   background-color:rgb(15, 15, 15) !important ;
+   color: #F0F0F0 !important;
 }

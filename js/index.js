@@ -2,19 +2,24 @@ let openMenu = document.getElementById("open-menu")
 let toggleMenu = document.querySelector("#show")
 let sideMenu =  document.querySelector(".nav-menu")
 let main = document.querySelector(".main")
-let navBar = document.querySelector(".nav")
+let navBar = document.querySelector(".navbar")
 let email = document.getElementById("email")
 let warning = document.getElementById("warning")
 let gmail = document.getElementById("gmail")
 let password = document.getElementById("password")
+let video = document.querySelector("video")
+
 function showMenu() {
     sideMenu.classList.add("active")
-    main.classList.add("side-effect")
+    navBar.classList.add("dim")
+    main.classList.add("dim")
+    video.classList.add("dim")
 }
 
 function hideMenu(){
     sideMenu.classList.remove("active")
-    main.classList.remove("side-effect")
+    
+    navBar.classList.remove("dim")
 
 }
 
