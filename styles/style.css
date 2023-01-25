@@ -26,6 +26,9 @@
     border-top-left-radius: 0px !important ;
     border-bottom-left-radius: 0px !important;
     height: fit-content !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    padding-right: 20px !important;
 }
 .yt-image{
     display: flex;
@@ -46,6 +49,7 @@
     padding: 10px;
     padding-bottom: 2px;
     gap: 10px;
+    font-family: "oswald";
     /* align-items: center; */
 }
 .channel-logo{
@@ -139,7 +143,34 @@ form {
 
 
 .icons {
-    display: flex;
+display: flex;
 justify-content: end;
 gap: 20px;
+}
+
+.video:hover {
+    cursor: pointer;
+}
+
+.icons > svg {
+    padding: 6px;
+    border-radius: 30px;
+    font-size: 100px !important;
+    width: 40px;
+}
+.icons > svg:hover {
+    background-color: #d8d5d5;
+    cursor: pointer;
+}
+
+.show-toggle {
+    width: 200px;
+}
+
+.showHam {
+    width: 40px;
+}
+
+.main {
+    margin-left: 220px !important;
 }

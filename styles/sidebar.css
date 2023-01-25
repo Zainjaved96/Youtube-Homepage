@@ -31,7 +31,7 @@ nav {
 
 /* making sidebar resposive and fixed so it can float over other elements */
 .nav-menu {
-    width: 200px;
+    width: 220px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -80,7 +80,7 @@ a {
     padding: 10px;
     font-weight: lighter;
     font-size: 16px;
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -115,7 +115,29 @@ a {
     flex-direction: column;
     height: 200px;
     justify-content: center;
+    padding-left: 10px;
    
 }
+.hamburger {
+   
+    padding: 6px;
+    border-radius: 30px;
+    font-size: 100px !important;
+}
+
+.hamburger:hover {
+    background-color: #d8d5d5;
+}
+
+
+.hide-toggle {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
 
 
