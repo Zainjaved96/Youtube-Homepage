@@ -19,69 +19,33 @@
     <!-- navbar-start -->
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex">
-        <!-- container-main-start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <!-- ham-container-start -->
-            <div class="hamburger">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" onclick="showMenu()" aria-current="page" href="#">
-                            <img src="./images/ham.png">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="./images/logo.png" width="25%" alt="Youtube-logo" class="youtube-logo"></a>
-                    </li>
-                </ul>
+            <div class="navbar-toggle d-flex  justify-content-evenly text-center">
+                <span href="#"  id="#show"  class="toggle-menu" onclick="showMenu()">
+                    <i class="fas fa-bars menu-bars nav-icon"></i>
+                </span>
+                <a href="#" class="nav-head d-flex">
+                    <i class="fab fa-youtube youtube-logo"></i> 
+                    <span class="logo-text"> Youtube </span> 
+                </a>
+            <!-- Toggle button Ends -->
             </div>
-            <!-- ham-container-end -->
-            <!-- search-container-start -->
-            <div class="input-group mb-3 me-auto ms-auto ">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary nav-btn search-btn" type="button">
-                        <ion-icon class="nav-btn" name="search-outline"></ion-icon>
-                    </button>
-                    <button class="btn btn-outline-secondary nav-btn " type="button">
-                        <ion-icon class="nav-btn" name="mic-outline"></ion-icon>
-                    </button>
-                </div>
-            </div>
-            <!-- search-container-end -->
-            <!-- notification-container-start -->
-            <div class="notification">
-                <ul class="navbar-nav  mb-2 mb-lg-0">
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <button class="plus-btn " type="submit">
-                                <img src="./images/plus.png " width="25px">
-                            </button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <button class="notification-btn  " type="submit">
-                                <ion-icon name="notifications-outline" width="30px"></ion-icon>
-                            </button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <button class="sign-btn  " type="submit">
-                                <img src="./images/signin.png" width="25px">
-                            </button>
-                        </a>
-                    </li>
-                </ul>
+            <form class="d-flex">
+              <input class="form-control" width="100%" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn search-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            
+            <div class="icons text-center">
+                <svg viewBox="0 0 24 24" width="8%" style="height: 40px;" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon"><path d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z" class="style-scope yt-icon"></path></g></svg>
+                <svg viewBox="0 0 24 24" width="8%" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" ><g class="style-scope yt-icon"><path d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z" class="style-scope yt-icon"></path></g></svg>
+                <img src="./images/logo 2.jpg" class="channel-logo profile-pic" width="" alt="" srcset="">
+
+                <!-- <i class="fa fa-bell" aria-hidden="true"></i> -->
             </div>
-            <!-- notification-container-end -->
         </div>
-        <!-- container-main-close -->
-    </nav>
+      </nav>
     <div class="nav-menu" id="nav-menu">
         <div class="nav-menu-items">
             <!-- Toggle button with Youtube Logo  -->
@@ -132,10 +96,10 @@
      <!-- <img src="./images/yt image.webp" alt="" srcset> -->
     <!-- navbar-close -->
       <!-- container-fluid-start -->
-        <div class="container-fluid">
-            <!-- container-row-start -->
-            <div class="row">
-                <div class="col-lg-3 col-sm-12 col-md-6">
+        <div class="container-fluid main">
+            <!-- container-row video-row video-row video-row-start -->
+            <div class="row video-row">
+                <div class="col-lg-3 video first-video col-sm-12 col-md-6">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/yt image.webp" class="card-img-top" alt="...">
                     <div class="card-body yt-image">
@@ -157,7 +121,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 col-md-6">
+                <div class="col-lg-3 video col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
                         <img src="./images/img 2.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
@@ -179,7 +143,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 col-md-6">
+                <div class="col-lg-3 video col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
                         <img src="./images/image 3.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
@@ -201,7 +165,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 col-md-6">
+                <div class="col-lg-3 video col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
                         <img src="./images/image 4.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
@@ -225,8 +189,8 @@
                       </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-12 col-md-6">
+            <div class="row video-row">
+                <div class="col-lg-3 video col-sm-12 col-md-6">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/image 9.webp" class="card-img-top" alt="...">
                     <div class="card-body yt-image">
@@ -248,7 +212,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 col-md-6">
+                <div class="col-lg-3 video col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
                         <img src="./images/image 7.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
@@ -270,7 +234,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 col-md-6">
+                <div class="col-lg-3 video col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
                         <img src="./images/image 8.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
@@ -292,7 +256,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 col-md-6">
+                <div class="col-lg-3 video col-sm-12 col-md-6">
                     <div class="card" style="width: 18rem;">
                         <img src="./images/image 5.webp" class="card-img-top" alt="...">
                         <div class="card-body yt-image">
@@ -315,7 +279,7 @@
                       </div>
                 </div>
             </div>
-             <!-- container-row-close -->
+             <!-- container-row video-row-close -->
         </div>
         <!-- container-fluid-close -->
 

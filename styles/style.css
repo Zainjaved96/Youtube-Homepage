@@ -31,6 +31,8 @@
     display: flex;
     align-items: flex-start;
 }
+
+
 .card-body{
     margin: 0px !important;
     padding: 0px !important;
@@ -52,12 +54,15 @@
     height: 40px;
     border-radius: 20px;
 }
+
+
+
 .card{
     border-radius: 20px !important;
     border: none !important;
 }
 .card-img-top{
-   border-radius: 20px;
+   border-radius: 20px !important;
 }
 .card .card-img-top{
     border-top-left-radius: none !important;
@@ -85,4 +90,56 @@
 .row{
     margin-top:100px;
     margin-bottom:20px;
+}
+
+
+@media (max-width:720px) {
+    .video  {
+        display: flex;
+        justify-content: center;
+        margin: 10px 3px;
+    }
+    .first-video {
+        margin-top: 60px !important;
+    }
+    .icons {
+        display: flex;
+        justify-content: center !important;
+    }
+    
+}
+
+
+.toggle-menu {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+form {
+    width: 500px;
+    margin-left: 30px;
+}
+
+.search-btn {
+    background-color: #F2F2F2 !important;
+    color: wheat;
+    padding-left: 14px;
+    padding-right: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.search-btn > i {
+    color: #1C1C1C;
+}
+
+.search-btn:hover {
+    background-color: #d8d5d5 !important ;
+}
+
+
+.icons {
+    display: flex;
+justify-content: end;
+gap: 20px;
 }
