@@ -42,6 +42,6 @@ function passSubmit(){
         warning.classList.add("warning-enabled")
     }
     else {
-        window.location.href = "/Youtube-Homepage//homepage.html"
+        window.location.href = "/Youtube-Homepage/homepage.html"
     }
 }
