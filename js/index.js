@@ -27,7 +27,7 @@ function emailSubmit(){
 
     else if (email.value.includes("@")){
         console.log("email valid")
-        window.location.href = "/Youtube-Homepage/password.html"
+        window.location.href = "password.html"
     }
     else {
         email.classList.add("wrong")
@@ -42,6 +42,6 @@ function passSubmit(){
         warning.classList.add("warning-enabled")
     }
     else {
-        window.location.href = "/Youtube-Homepage/homepage.html"
+        window.location.href = "homepage.html"
     }
 }
