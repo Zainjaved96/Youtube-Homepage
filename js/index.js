@@ -7,31 +7,37 @@ let email = document.getElementById("email")
 let warning = document.getElementById("warning")
 let gmail = document.getElementById("gmail")
 let password = document.getElementById("password")
-let video = document.querySelector("video")
+let vidRow1 = document.querySelector(".video-row")
+let vidRow2 = document.querySelectorAll(".video-row")[1]
+let buttons = document.querySelector(".buttons")
 
+
+//  Add dim class to all elements when sidebar is active
 function showMenu() {
     sideMenu.classList.add("active")
     navBar.classList.add("dim")
-    main.classList.add("dim")
-    video.classList.add("dim")
+    buttons.classList.add("dim")
+    vidRow1.classList.add("dim")
+    vidRow2.classList.add("dim")
 }
 
 function hideMenu(){
     sideMenu.classList.remove("active")
-    
     navBar.classList.remove("dim")
-
+    buttons.classList.remove("dim")
+    vidRow1.classList.remove("dim")
+    vidRow2.classList.remove("dim")
 }
 
 function emailSubmit(){
-    console.log("button clicked")
+  
     if (email.value == "" ){
         email.classList.add("wrong")
         warning.classList.add("warning-enabled")
     }
 
     else if (email.value.includes("@")){
-        console.log("email valid")
+       
         window.location.href = "password.html"
     }
     else {

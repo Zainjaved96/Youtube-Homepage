@@ -24,16 +24,19 @@ body {
     justify-content: center !important;
     align-items: center !important;
 }
-.search-btn{
-    background-color: #F0F0F0 !important;
-    color: black !important;
-    border-top-left-radius: 0px !important ;
-    border-bottom-left-radius: 0px !important;
-    height: fit-content !important;
+
+.input-group-text {
     border-top-right-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
-    padding-right: 20px !important;
+    padding: 9px 20px !important;
+    background-color: #F2F2F2 !important ;
 }
+
+.input-group-text:hover {
+    background-color: #e2dfdf !important ;
+    cursor: pointer;
+}
+
 .yt-image{
     display: flex;
     align-items: flex-start;
@@ -110,14 +113,15 @@ body {
         display: flex;
         justify-content: center;
         margin: 15px 3px;
+        width: 100%;
     }
     .first-video {
-        margin-top: 60px !important;
+        margin-top: 20px !important;
     }
     .icons {
-        width: ;
         display: flex;
         justify-content: center !important;
+        width: 400px;
     }
     .buttons {
         margin-top: 70px !important;
@@ -125,6 +129,12 @@ body {
     .btn {
         margin-bottom: 10px;
         display: none;
+    }
+    .form-control {
+        display: none;
+    }
+    .video-row {
+        width: 100%;
     }
 }
 
@@ -142,10 +152,11 @@ form {
 .search-btn {
     background-color: #F2F2F2 !important;
     color: wheat;
-    padding-left: 14px;
+    padding-left: 20px;
     padding-right: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin-left: 0px;
 }
 
 .search-btn > i {
@@ -188,7 +199,8 @@ gap: 20px;
 
 
 .dim {
-    opacity: 0.3 !important;
+    opacity: 0.6 !important;
+    transition: 500ms;
 }
 
 .buttons{
@@ -209,4 +221,9 @@ button{
 .first-button{
    background-color:rgb(15, 15, 15) !important ;
    color: #F0F0F0 !important;
+}
+
+
+.input-group {
+    width: 400px !important;
 }
